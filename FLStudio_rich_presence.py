@@ -136,16 +136,12 @@ def main():
         time.sleep(3)  # Update every 3 seconds
 
 
-    time.sleep(3)
     print("FL Studio cerrado. Cerrando Rich Presence.")
     try:
-        ...
-    finally:
-     try:
          rpc.clear()
          rpc.close()
          print("Rich Presence cerrado correctamente.")
-     except Exception as e:
+    except Exception as e:
          print(f"Error al cerrar la conexión con Discord: {e}")
 
 if __name__ == "__main__":
